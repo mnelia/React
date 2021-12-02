@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import CartWidget from "./CartWidget";
 import { MenuItems } from "./MenuItems";
 import './Navbar.css'
 
@@ -15,6 +16,7 @@ class Navbar extends Component {
     render () {
         return(
             <nav className="NavbarItems">
+                
                  <h1 className="navbar-logo">React<i className="fab fa-react"></i></h1>
                  <div className="menu-icon" onClick={this.handleClick}>
                     <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
@@ -31,6 +33,7 @@ class Navbar extends Component {
                      })}
                      
                  </ul>
+                 <CartWidget />
             </nav>
         )
     }
