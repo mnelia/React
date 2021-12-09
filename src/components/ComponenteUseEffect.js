@@ -9,7 +9,7 @@ function ComponenteUseEffect({ max, inicial}) {
     }
 
     const handleResta = () => {
-        contador < inicial ?  setContador(contador - 1) : alert ('compra minima')
+        contador > inicial ?  setContador(contador - 1) : alert ('compra minima')
     }
 
 

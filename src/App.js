@@ -5,13 +5,13 @@ import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import ComponenteUseEffect from './components/ComponenteUseEffect';
 
 function App() {
-  const inicial = 1
+  //const inicial = 1
   const max = 10
   return (
     <div className="App">
       <Navbar />
       <ItemListContainer greeting="Hola soy Item list Container que vengo de App " />
-      <ComponenteUseEffect inicial={inicial} max={max} />
+      <ComponenteUseEffect inicial={1} max={max} />
 
     </div>
   );
