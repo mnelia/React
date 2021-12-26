@@ -1,5 +1,5 @@
 import {useState, useEffect} from 'react'
-import { getFetch } from "../getFetch"
+import { getFetch } from "../../getFetch"
 
 
 
@@ -32,12 +32,15 @@ function ItemListContainer( {greeting}) {
                                             className='col-md-4'
                                         >
                                             <div className="card w-100 mt-5" >
-                                                <div className="card-header">
+                                                <div className="card-header cardName">
                                                     {`${prod.name} - ${prod.categoria}`}
+                                                </div>
+                                                <div className="card-header cardName">
+                                                    {`${prod.price}`}
                                                 </div>
                                                 <div className="card-body">
                                                     <img src={prod.foto} alt='' className='w-50' />
-                                                    {prod.price}
+                                                   
                                                 </div>
                                                 <div className="card-footer">
                                                     <button className="btn btn-outline-primary btn-block">

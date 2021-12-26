@@ -19,6 +19,7 @@ function ComponenteUseEffect({ max, inicial}) {
             <p>{contador}</p>
             <button onClick={handleSuma}>Click +</button>
             <button onClick={handleResta}>Click -</button>
+            <button>Agregar al Carrito</button>
             
         </div>
     )
